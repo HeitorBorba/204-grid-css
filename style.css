@@ -1,0 +1,96 @@
+body{
+    margin:0%;
+    display: grid;
+    grid-template-areas:'header header header header'
+                        'navbar navbar navbar navbar'
+                        'section section aside aside '
+                        'footer footer footer footer';
+    grid-auto-rows: 20vh 20vh 60vh 40vh;
+    grid-gap: 10px;
+    background-color: black;
+}
+header{
+    grid-area: header;
+    background-color: rgb(11, 12, 12);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    grid-area: navbar;
+    background-color: red;    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+section{
+    
+    grid-area: section;
+    background-color:green;
+}
+aside{
+    grid-area: aside;
+    background-color:yellow;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+}
+nav a{
+    color: white;
+    font-weight: bold;
+    background-color: rgb(65, 61, 61);
+    width: 50px;
+    height: 25px;
+    text-decoration: none;
+    
+}
+nav p{
+    color:rgb(85, 253, 85);
+    font-family: 'Times New Roman', Times, serif;
+}
+header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    border-style: solid;
+    border-color: white;
+}
+aside button{
+    margin-top: 20px;
+    background-color:aqua;
+    border: none;
+    border-color: black;
+    border-style: solid;
+    cursor: pointer;
+}
+aside input{
+    background-color: transparent;
+    border: none;
+    border-color: black;
+    border-style: solid;
+}
+aside input::placeholder{
+    color: aqua;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(75, 29, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div{
+    width: 150px;
+    height: 40px;
+    background-color: limegreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
